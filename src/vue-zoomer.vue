@@ -30,7 +30,7 @@ export default {
     zoomed: { type: Boolean, default: false },
     resetTrigger: { type: Number, default: 1e5 },
     aspectRatio: { type: Number, default: 1 },
-    backgroundColor: { type: String, default: 'red' },
+    backgroundColor: { type: String, default: 'transparent' },
   },
   data () {
     return {
@@ -115,8 +115,8 @@ export default {
       }
       scaleDelta = newScale / this.scale
       this.scale = newScale
-      this.translateX = (0.5 + this.translateX - normMousePosX) * scaleDelta + normMousePosX - 0.5
-      this.translateY = (0.5 + this.translateY - normMousePosY) * scaleDelta + normMousePosY - 0.5
+      //this.translateX = (0.5 + this.translateX - normMousePosX) * scaleDelta + normMousePosX - 0.5
+      //this.translateY = (0.5 + this.translateY - normMousePosY) * scaleDelta + normMousePosY - 0.5
     },
     // pan
     onPointerMove (newMousePosX, newMousePosY) {
