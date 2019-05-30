@@ -30,7 +30,7 @@ export default {
     zoomed: { type: Boolean, default: false },
     resetTrigger: { type: Number, default: 1e5 },
     aspectRatio: { type: Number, default: 1 },
-    backgroundColor: { type: String, default: 'transparent' },
+    backgroundColor: { type: String, default: 'red' },
   },
   data () {
     return {
